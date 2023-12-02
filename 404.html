@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Página de cadastro</title>
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cadastre-se!</h1>
+    </header>
+    <form id="form">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required><br><br>
+            
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" placeholder="Digite uma senha" required><br><br>
+
+        <label for="Confirmar senha">Confirmar senha:</label><br>
+        <input type="password" id="confirmar_senha" name="confirmar_senha" required><br><br>
+
+        <label for="telefone">Telefone (opcional):</label><br>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone"><br><br>
+
+        <input type="button" value="Enviar" onclick="store()">
+        <input type="button" value="Limpar campos" onclick="Limpar(document.getElementById('form'))">
+
+        <ul id="dados"></ul>
+    </form>
+    <script src="Script.js"></script>
+</body>
+</html>
